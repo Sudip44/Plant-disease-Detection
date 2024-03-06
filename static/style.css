@@ -1,0 +1,341 @@
+body{
+    background-image: url('plant_background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Inter, sans-serif;
+    color:#57586e;
+    font-size: 10px;
+    line-height: 1.7;
+    margin: 8px;
+    display: block;
+
+
+    
+}
+h1{
+    padding-top: 2%;
+    font-weight:bold;
+    color:rgb(4, 54,4);
+    text-align: center;
+    line-height: 1.1;
+    font-style: italic;
+}
+#sologon{
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color:#123524;
+    font-size: 42px;
+    text-align: center;
+    display: block;
+}
+p{
+    display:block;
+    font-family: Inter, sans-serif;
+    color: #57586e;
+    line-height: 1.7;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div{
+    display: block;
+}
+img{
+    height: fit-content;
+    width: fit-content;
+}
+.h3{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: #123524;
+    font-weight: 600;
+    justify-content:center;
+    display:block;
+    text-align: center;
+}
+.subheading{
+    font-size: 18px;
+    max-width: 580px;
+    color:#57586e;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+.steps{
+    font-size: 20px;
+    margin-bottom:5px;
+    color:#0a083b;
+    line-height: 1.2;
+    font-weight: 600;
+    display:block;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+.section{
+    padding:90px 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    padding-top: 40px;
+    padding-bottom:40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction:column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color:#006400;
+}
+.container.our-story{
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: right;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 70px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 6.5fr 2fr;
+    grid-template-columns: 6.5fr 2fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+
+}
+.container{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    max-width: 1100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.our-story-left-column{
+    width: 100%;
+}
+.about-title{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: #0a083b;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: left;
+}
+h2{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: Inter, sans-serif;
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.our-story-text{
+    font-size: 18px;
+    margin-bottom: 40px;
+
+}
+.our-story-right-column{
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+.about-card{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300px;
+    height: 170px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(29, 29, 31, 0.1);
+    border-radius: 10px;
+}
+.about-card-text{
+    color: #57586e;
+    font-size: 15px;
+    line-height: 1.8;
+    color:brown;
+}
+.about-card-number{
+    color: #0a083b;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+.plants{
+    display:inline-block;
+
+}
+.column{
+    float: left;
+    width:33.33%;
+    padding:5px;
+
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    display:inline-block;
+    border:0;
+}
+
+#selection{
+    margin-bottom: 20px;
+    padding:5px;
+}
+
+.team-grid{
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    margin-top: 40px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+}
+
+.text-container.centered {
+    max-width: 750px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.h2.centered {
+    padding-bottom: 0px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.team-member-card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    padding: 40px 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px 0 rgba(10, 8, 59, 0.06);
+    text-align: center;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 15px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }

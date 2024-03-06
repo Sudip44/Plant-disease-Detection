@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'contact.css' %}">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="{% url 'home' %}">Home</a>
+        <a href="{% url 'contact' %}">About</a>
+        
+      </div>
+    <div class="vision">
+        <p class="desc">
+            We are of B.SC.CSIT studing in Butwal Multiple Campus. We have created this webapp  for our Seventh Semester Project Work. This webapp is based on Django framework.
+            <br> is our first try in developing such project,so this has very simple look and feels.<br> We will try to improve in near future.
+            Hope you liked our project.
+        </p>
+    </div>
+    <div class="team">Our Team</div>
+    <div class="team-grid">      
+        <div class="team-member-card">
+          <div class="team-member-info-container">
+            <img src="{% static 'prem.jpeg' %}" alt="prem" class="team-member-small-pics">
+            <h3 class="team-member-name">Prem Rana</h3>
+            <p class="team-member-roll">Roll No: 25146/076</p>
+            <p class="team-member-email">Email: ranaprem720@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="team-member-card">
+          <div class="team-member-info-container">
+            <img src="{% static 'devi1.jpg' %}" alt="devi" class="team-member-small-pics">
+            <h3 class="team-member-name">Devi Prasad Neupane</h3>
+            <p class="team-member-roll">Roll No: 25122/076</p>
+            <p  class="team-member-email">Email: devineupane615@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="team-member-card">
+          <div class="team-member-info-container">
+            <img src="{% static 'sudip.jpg' %}" alt="sudip" class="team-member-small-pics">
+            <h3 class="team-member-name">Sudip Neupane</h3>
+            <p class="team-member-roll">Roll No: 25170/076</p>
+            <p class="team-member-email">Email: sudipneupane395@gmail.com</p>
+
+          </div>
+        </div>
+
+
+      </div>
+    
+</body>
+</html>

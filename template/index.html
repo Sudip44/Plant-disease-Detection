@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant diesease Classification</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="{% url 'home' %}">Home</a>
+        <a href="{% url 'contact' %}">About</a>        
+    </div>
+
+    <div id="container">
+        
+        <div class="card">
+            <h3 class="h3">Image Upload:</h3>
+        </div>
+        <div class="drop_box">
+    
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <header>
+                <h4>Select File here</h4>
+            </header>
+            <p>Files Supported: JPG, JPEG , PNG , JFIF </p>
+            <input type="file" name="upload" accept=".jpeg, .jpg, .png, .jfif">
+            <input type="submit" value="Submit" class="submit_btn">        
+        </form>
+        </div>
+
+        
+    </div>
+    
+
+    <div id="hidden">
+        <div class="image">
+            <img src="{{file_url}}" class="plants">
+        </div>    
+
+        <div class="predictions">
+            <div class="about-card">
+                <div class="about-card-text">The predicted class is :</div>
+                <div class="predict-class">{{pred}}</div>
+                <div class="about-card-text">with Confidence:</div>
+                <div class="about-card-number">{{conf}}%</div>
+                
+              </div>
+
+            
+            <div class="details">
+                <p class="desc">{{disease}}</p>        
+            </div>
+            
+
+        </div>
+
+        
+
+    </div>
+
+        
+</body>
+</html>

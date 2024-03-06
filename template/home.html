@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+ <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant disease Detection</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">    
+  </head>
+  <body>
+    <div class="topnav">
+      <nav>
+      <a class="active" href="#">Home</a>
+      <a href="#plants">Select Plant</a>
+      <a href="#story">Our Story</a>
+      <a href="{% url 'contact' %}">About</a>
+      </nav>
+      
+    </div>
+    <h1>Welcome To Plant Disease Detection</h1>
+    
+    <div id="sologon">
+      <p>
+        Save your Plants by detecting disease in seconds.
+      </p>
+      <div class="normal">
+      <p >
+        We use image classification and machine learning to recognize plant disease before they can do more damage.
+      </p>
+      </div>
+
+    </div>
+    <div id="steps">
+      <div class="h3">
+        <h3>Keeping your plant has never been this simple</h3>
+      </div>
+      <p class="subheading">We cut the time and cost that it takes to detect plant disease by provding an instant diagnosis.</p>
+      <p class="steps">
+        Step 1: Select your Plant<br>
+        Step 2: Upload image of that plant<br>
+        Step 3: Receive a diagnosis in a few seconds<br>
+        Step 4: Learn more about the disease<br>
+      </p>
+    </div>
+    <div id="plants" class="section">
+      <div class="container">
+        <div class="text-container centered">
+          <h2 class="h2 centered">Select Plant:</h2>
+        </div>
+        <div class="team-grid">
+          <div class="team-member-card">
+            <div class="team-member-info-container">
+              <img src="media\rice_plant.jpg" alt="rice_plant" class="team-member-small-pics">
+              <h3 class="team-member-name"><a href="{% url 'rice' %}">Rice</a></h3>
+            </div>
+          </div>
+
+          <div class="team-member-card">
+            <div class="team-member-info-container">
+              <img src="media\potato.jpg" alt="potato_plant" class="team-member-small-pics">
+              <h3 class="team-member-name"><a href="{% url 'potato' %}">Potato</a></h3>
+            </div>
+          </div>
+
+          <div class="team-member-card">
+            <div class="team-member-info-container">
+              <img src="media\tomato.jpg" alt="tomato_plant" class="team-member-small-pics">
+              <h3 class="team-member-name"><a href="{% url 'tomato' %}">Tomato</a></h3>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+    
+          
+        <div id="story" class="section">
+          <div class="container our-story">
+            <div class="our-story-left-column">
+              <h2 class="about-title">Our Story</h2>
+              <p class="our-story-text">
+                Plant disease is one of the most significant challenges to farmers around the world. Identifying plant disease is an expensive and time consuming testing method, which not every one can afford.
+                <br></p>
+                <p class="our-story-text">
+                  So, We have bring "Plant Disease Detection" which is a simple method of testing for the identification of plant's disease in simple way. 
+              </p>
+            </div>
+            <div class="our-story-right-column">
+              <div class="about-card">
+                <div class="about-card-text">Our app is tested within over</div>
+                <div class="about-card-number">90%</div>
+                <div class="about-card-text">accuracy</div>
+              </div>
+              <div class="about-card">
+                <div class="about-card-text">We can identify</div>
+                <div class="about-card-number">18</div>
+                <div class="about-card-text">different plant disease</div>
+              </div>
+              <div class="about-card">
+                <div class="about-card-text">We support </div>
+                <div class="about-card-number">3</div>
+                <div class="about-card-text">differnet crops</div>
+              </div>
+            </div>
+          </div>
+          
+         </div>
+        
+    </div>
+    
+  </body>
+</html>
